@@ -1,0 +1,40 @@
+\documentclass[aspectratio = 169, xcolor = x11names]{ctexbeamer}
+\usefonttheme{serif}
+\setmainfont{SourceHanSansCN-Normal}
+\setCJKmainfont{wqy-microhei}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{background canvas}{bg = DodgerBlue3}
+\setbeamercolor{text}{fg = white}
+\setbeamersize{text margin left = 8\ccwd}
+\usepackage{qrcode}
+\usepackage{tabu}
+\usepackage{multirow}
+\setlength\tabcolsep{2pt}
+\begin{document}
+
+\begin{beamercolorbox}{text}
+
+  \fontsize{80}{80}\selectfont
+  \hspace{-0.2em}:(
+
+  \zihao{4}
+  你的电脑遇到问题，需要重启。
+
+  我们只收集某些错误信息，然后你可以重新启动。
+
+  \mbox{}
+
+  100\% 完成
+
+  \mbox{}
+
+  \zihao{6}
+  \begin{tabu}{cl}
+    \multirow{4}{4.5\ccwd}{\qrcode[height = 4.5\ccwd]{http://windows/stopcode}} & 有关此问题的详细信息和可能的解决方法，请访问\url{http://windows/stopcode}\\
+                                                                                & \\
+                                                                                & 如果致电支持人员，请向他们提供一下信息\\
+                                                                                & 终止代码: SYSTEM\_SERVICE\_EXCEPTION
+  \end{tabu}
+\end{beamercolorbox}
+
+\end{document}
